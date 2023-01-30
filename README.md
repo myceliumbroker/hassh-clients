@@ -1,1 +1,36 @@
-# hassh-clients
+<pre><div align="center">  
+ ██░ ██  ▄▄▄        ██████   ██████  ██░ ██ 
+▓██░ ██▒▒████▄    ▒██    ▒ ▒██    ▒ ▓██░ ██▒
+▒██▀▀██░▒██  ▀█▄  ░ ▓██▄   ░ ▓██▄   ▒██▀▀██░
+░▓█ ░██ ░██▄▄▄▄██   ▒   ██▒  ▒   ██▒░▓█ ░██ 
+░▓█▒░██▓ ▓█   ▓██▒▒██████▒▒▒██████▒▒░▓█▒░██▓
+ ▒ ░░▒░▒ ▒▒   ▓▒█░▒ ▒▓▒ ▒ ░▒ ▒▓▒ ▒ ░ ▒ ░░▒░▒
+ ▒ ░▒░ ░  ▒   ▒▒ ░░ ░▒  ░ ░░ ░▒  ░ ░ ▒ ░▒░ ░
+ ░  ░░ ░  ░   ▒   ░  ░  ░  ░  ░  ░   ░  ░░ ░
+ ░  ░  ░      ░  ░      ░        ░   ░  ░  ░
+ </div></pre>    
+ 
+ # FAQ
+
+## What is this?
+A repository with a list of hassh fingerprints and the associated client names observed with it. All fingerprints are gathered from systems actively trying to log in to other systems via ssh on port 22.
+
+## Ok, what is hassh?
+[Salesforce page on JARM](https://github.com/salesforce/jarm)
+
+## What does the file contain?
+A csv file containing the hassh fingerprint, how many times it it has been observed (since october 2022), and the associated client names observed with it.
+
+The csv file contains the following and is formatted as below:
+
+<pre>
+hassh,observations,versions
+51cba57125523ce4b9db67714a90bf6e,1363148,SSH-2.0-libssh-0.6.3, SSH-2.0-libssh-0.6.0
+f555226df1963d1d3c09daf865abdc9a,1126497,SSH-2.0-libssh_0.9.6, SSH-2.0-libssh_0.9.5
+01ca35584ad5a1b66cf6a9846b5b2821,484518,SSH-2.0-Go
+4e066189c3bbeec38c99b1855113733a,180668,SSH-2.0-Go, SSH-2.0-PuTTY_Release_0.1601852.73062054, SSH-2.0-PuTTY_Release_0.1801388524.1262047536, SSH-2.0-PuTTY_Release_0.416481785.864560918, SSH-2.0-PuTTY_Release_0.477042838.1370353077, SSH-2.0-PuTTY_Release_0.286787290.824758700, SSH-2.0-PuTTY_Release_0.1561736894.331836349, SSH-2.0-PuTTY_Release_0.281515356.1376798029, SSH-2.0-PuTTY_Release_0.1169845752.1947832831, SSH-2.0-PuTTY_Release_0.1066831860.43160771, SSH-2.0-PuTTY_Release_0.1808128691.2119611662, SSH-2.0-PuTTY_Release_0.2012088096.1274387677, SSH-2.0-PuTTY_Release_0.268705117.1488609909, SSH-2.0-PuTTY_Release_0.1911713826.1118114188, SSH-2.0-PuTTY_Release_0.948700626.1419191091, SSH-2.0-PuTTY_Release_0.148397987.484642849, SSH-2.0-PuTTY_Release_0.1126898763.562218395, SSH-2.0-PuTTY_Release_0.453439152.1893134143, SSH-2.0-PuTTY_Release_0.1062789247.993326130, SSH-2.0-PuTTY_Release_0.641692938.374751240, SSH-2.0-PuTTY_Release_0.713025225.1198169002, SSH-2.0-PuTTY_Release_0.778107261.693999018, SSH-2.0-PuTTY_Release_0.2144642691.1884165373, SSH-2.0-PuTTY_Release_0.493821255.204892988, SSH-2.0-PuTTY_Release_0.2099936669.1368911354, SSH-2.0-PuTTY_Release_0.7339983.1896059819, SSH-2.0-PuTTY_Release_0.1088868788.710813279, SSH-2.0-PuTTY_Release_0.1077624761.1469190597, SSH-2.0-PuTTY_Release_0.1437965830.1061334690, SSH-2.0-PuTTY_Release_0.1077510663.2020812083, SSH-2.0-PuTTY_Release_0.2021980341.1105103587, SSH-2.0-PuTTY_Release_0.1287265505.561773837, SSH-2.0-PuTTY_Release_0.1080972353.171738530, SSH-2.0-PuTTY_Release_0.1217881166.37155240, SSH-2.0-PuTTY_Release_0.1841648284.640969911, SSH-2.0-PuTTY_Release_0.920252894.1498106108, SSH-2.0-PuTTY_Release_0.1274164498.1751750386, SSH-2.0-PuTTY_Release_0.484959433.1385932120, SSH-2.0-PuTTY_Release_0.1209136289.487254959, SSH-2.0-PuTTY_Release_0.893794085.1621019130, SSH-2.0-PuTTY_Release_0.1036911571.1164558501, SSH-2.0-PuTTY_Release_0.1325744263.1942293250, SSH-2.0-PuTTY_Release_0.653507812.637956871, SSH-2.0-PuTTY_Release_0.796260863.574417963, SSH-2.0-PuTTY_Release_0.1721882955.1064128341, SSH-2.0-PuTTY_Release_0.914048540.902995906, SSH-2.0-PuTTY_Release_0.1807745795.1108175092, SSH-2.0-PuTTY_Release_0.675960567.955019018, SSH-2.0-PuTTY_Release_0.1700516000.669755243, SSH-2.0-PuTTY_Release_0.1144517253.1532506915, SSH-2.0-PuTTY_Release_0.934798658.415018917, SSH-2.0-PuTTY_Release_0.1817398987.914685627, SSH-2.0-PuTTY_Release_0.1123199236.1030209185, SSH-2.0-PuTTY_Release_0.2051044292.690059232, SSH-2.0-PuTTY_Release_0.1094864156.493652223, SSH-2.0-PuTTY_Release_0.410074741.181932465, SSH-2.0-PuTTY_Release_0.210047892.590593687, SSH-2.0-PuTTY_Release_0.2139179242.1783749822, SSH-2.0-PuTTY_Release_0.64276510.1622855971, SSH-2.0-PuTTY_Release_0.1895326698.1796556520, SSH-2.0-PuTTY_Release_0.780024491.1772592905, SSH-2.0-PuTTY_Release_0.379651105.1211701599, SSH-2.0-PuTTY_Release_0.1314911686.1596967929, SSH-2.0-PuTTY_Release_0.1427755902.1154681911, SSH-2.0-PuTTY_Release_0.629404679.460814643, SSH-2.0-PuTTY_Release_0.2031878298.800158313, SSH-2.0-PuTTY_Release_0.1019524841.884489370, SSH-2.0-PuTTY_Release_0.1557610511.1329053748, SSH-2.0-PuTTY_Release_0.713559152.1951184115, SSH-2.0-PuTTY_Release_0.644844547.1507828642, SSH-2.0-PuTTY_Release_0.1874564418.1792519681, SSH-2.0-PuTTY_Release_0.1257724589.1980531555, SSH-2.0-PuTTY_Release_0.588695604.1145983352, SSH-2.0-PuTTY_Release_0.1947374422.1888214287, SSH-2.0-PuTTY_Release_0.1903088385.2098569603, SSH-2.0-PuTTY_Release_0.560375427.548423276, SSH-2.0-PuTTY_Release_0.703471839.1627575319, SSH-2.0-PuTTY_Release_0.1549015594.1269553474, SSH-2.0-PuTTY_Release_0.322555001.497929928, SSH-2.0-PuTTY_Release_0.2004679811.2046288098, SSH-2.0-PuTTY_Release_0.1000666826.1031059585, SSH-2.0-PuTTY_Release_0.862177010.674910088, SSH-2.0-PuTTY_Release_0.1086734079.1338287787, SSH-2.0-PuTTY_Release_0.945427521.587487013, SSH-2.0-PuTTY_Release_0.1667615190.1149723271, SSH-2.0-PuTTY_Release_0.1303120504.13374811, SSH-2.0-PuTTY_Release_0.397072766.981762766, SSH-2.0-PuTTY_Release_0.1367817262.853562659, SSH-2.0-PuTTY_Release_0.240958146.732665233, SSH-2.0-PuTTY_Release_0.1754005741.853979916, SSH-2.0-PuTTY_Release_0.1412115970.1728886205, SSH-2.0-PuTTY_Release_0.1712550515.1285337448, SSH-2.0-PuTTY_Release_0.482309316.2032665488, SSH-2.0-PuTTY_Release_0.979505890.2045120351
+a7a87fbe86774c2e40cc4a7ea2ab1b3c,168959,SSH-2.0-libssh2_1.8.2, SSH-2.0-libssh2_1.8.0, SSH-2.0-paramiko_1.8.1, SSH-2.0-PuTTY_Release_0.62, SSH-2.0-paramiko_1.12.4, SSH-2.0-Nmap_SSH2_Hostkey, SSH-2.0-WinSCP_release_5.7.6, SSH-2.0-libssh-0.3.4, SSH-2.0-OpenSSH_4.3, SSH-2.0-WinSCP_release_5.1.3, SSH-2.0-PuTTY_Release_0.58, SSH-2.0-PuTTY_Release_0.63, SSH-2.0-PuTTY_Release_0.64, SSH-2.0-OpenSSH_5.3, SSH-2.0-paramiko_, SSH-2.0-WinSCP_release_3.8.1, SSH-2.0-paramiko_1.15.2, SSH-2.0-PuTTY_KiTTY, SSH-2.0-libssh-0.6.0, SSH-2.0-OpenSSH_6.2, SSH-2.0-libssh_0.11, SSH-2.0-WinSCP_release_4.1.9, SSH-2.0-WinSCP_release_4.3.5, SSH-2.0-PuTTY_Release_0.67, SSH-2.0-paramiko_1.7.5, SSH-2.0-JSCH_0.1.51, SSH-2.0-OpenSSH_6.0p, SSH-2.0-WinSCP_release_5.7.5, SSH-2.0-PuTTY_Release_0.66, SSH-2.0-OpenSSH_5.9, SSH-2.0-WinSCP_release_5.7.4, SSH-2.0-paramiko_2.1.1, SSH-2.0-PuTTY_Release_0.60, SSH-2.0-libssh_0.4.8, SSH-2.0-PuTTY_Release_0.62.1, SSH-2.0-PuTTY_Release_0.65, SSH-2.0-PuTTY_Release_0.59, SSH-2.0-paramiko_1.17.1, SSH-2.0-WinSCP_release_5.1.5, SSH-2.0-paramiko_2.0.2, SSH-2.0-paramiko_2.0.0, SSH-2.0-OpenSSH_5.2, SSH-2.0-PuTTY_Snapshot_2010_02_20, SSH-2.0-Granados-1.0, SSH-2.0-paramiko_1.15.1, SSH-2.0-libssh_0.5.5, SSH-2.0-OpenSSH_3.9p1, SSH-2.0-PuTTY_Release_0.61, SSH-2.0-WinSCP_release_5.2.7, SSH-2.0-paramiko_2.1.2, SSH-2.0-paramiko_1.10.1, SSH-2.0-OpenSSH_6.0, SSH-2.0-OpenSSH_6.1, SSH-2.0-JSCH_0.1.48, SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3, SSH-2.0-paramiko_1.16.1, SSH-2.0-libssh2_1.7.0, SSH-2.0-paramiko_1.16.0
+</pre>
+
+## How often is this updated?
+Currently, when time permits.
