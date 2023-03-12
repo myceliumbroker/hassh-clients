@@ -17,7 +17,10 @@
 A repository with a list of hassh fingerprints and the associated client names observed with it. All fingerprints are gathered from systems actively trying to log in to other systems via ssh on port 22.
 
 ## Ok, what is hassh?
-[Salesforce page on hassh](https://github.com/salesforce/hassh)
+
+From the [Salesforce github description](https://github.com/salesforce/hassh) of 'hassh':
+
+HASSH is a network fingerprinting standard which can be used to identify specific Client and Server SSH implementations. The fingerprints can be easily stored, searched and shared in the form of a small MD5 fingerprint. 
 
 ## What does the file contain?
 A csv file containing the hassh fingerprint, how many times it it has been observed (since october 2022), and the associated client names observed with it.
